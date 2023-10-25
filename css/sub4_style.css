@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+figure,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: bold;
+}
+
+body {
+    font-family: 'GowunBatang-Regular', 'SpoqaHanSansNeo-Regular', 'Noto Sans', sans-serif;
+    word-break: keep-all;
+    line-height: 24px;
+
+    position: relative;
+    /* header 기준 */
+
+    /* cursor: url(../images/icon/icon_cursor.png), auto; */
+}
+
+#wrap {
+    min-width: 1600px;
+}
+
+/* scroll top */
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+
+
+    display: none;
+    /* background-color: #081120; */
+
+    width: 40px;
+
+    text-align: center;
+    padding: 5px 5px 0;
+}
+
+.top img {
+    width: 50px;
+    display: block;
+}
+
+/* main_wrap */
+#main_wrap {
+    height: 900px;
+    background-image: url(../images/sub4_info/sub_ex_main.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.main_banner {
+    width: 1320px;
+    height: 900px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.word {
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 30px;
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+
+    animation: typing .5s steps(12), blink .5s step-end infinite alternate;
+    width: 19ch;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.moon {
+    width: 300px;
+    height: 300px;
+
+    transition: all .3s;
+    position: relative;
+}
+
+.moon h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.moon:hover {
+    transform: translateY(10px);
+    transition: all .3s;
+}
+
+.moon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.left {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.right {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+
+#reserv {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 820px;
+    width: 100%; /* position하면 너비필수!!!! */
+}
+
+/* reservation */
+#reservation {
+    width: 1320px;
+    height: 1500px;
+    margin: 50px auto;
+
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    height: 50px;
+    border-bottom: 2px solid #081120;
+    font-family: 'GowunBatang-Regular';
+    font-weight: bolder;
+}
+
+.info_box {
+    width: 650px;
+}
+
+.info_box h3 {
+    padding: 20px 10px;
+}
+
+.info {
+    padding: 30px;
+    background-color: #eee;
+}
+
+.info ul {
+    border-bottom: 1px solid #ddd;
+
+    padding: 30px;
+}
+
+.info ul li {
+    list-style: disc;
+}
+
+.info ul li span {
+    color: #777;
+}
+
+.info ul li a {
+    border-bottom: 1px solid #000;
+    color: #726b42;
+}
+
+.info ul li.title {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.title h4 {
+    font-size: 16px;
+}
+
+.info ul:last-child {
+    border-bottom: none;
+}
+
+/* calendar */
+
+.calendar_box {
+    width: 650px;
+    height: 650px;
+
+    position: sticky;
+    top: 50px;
+    left: 0;
+}
+
+.calendar_box .text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calendar_box .text div {
+    display: flex;
+    align-items: center;
+}
+
+.calendar_box .text div:nth-child(2)::before {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #777;
+
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.calendar_box .text div:nth-child(2)::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #777;
+
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.calendar_box .text p img {
+    display: inline-block;
+    width: 20px;
+    padding: 6px 5px 0 0;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
+.Calendar {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.Calendar>thead>tr:first-child>td {
+    font-weight: bold;
+}
+
+.Calendar>thead>tr:last-child>td {
+    color: #202020;
+}
+
+.Calendar>thead>tr:last-child>td:first-child {
+    color: red
+}
+
+.pastDay {
+    color: lightgray;
+}
+
+.today {
+    background-color: #ea4e5e;
+    cursor: pointer;
+}
+
+.futureDay {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background-color: #081120;
+    color: #fff;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-block;
+    background-color: #ddd;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.date:hover {
+    background-color: #081120;
+    color: #fff;
+}
+
+/* location */
+#location {
+    height: 1200px;
+}
+
+.fixed_banner {
+    height: 300px;
+
+    background-image: url(../images/sub4_info/road.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fixed_banner h1 {
+    text-align: center;
+    line-height: 300px;
+    letter-spacing: 10px;
+}
+
+/* map_box */
+.map_box {
+    width: 1320px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.map_box h2 {
+    margin: 30px 0;
+}
+
+.map_box h2 span {
+    font-size: 15px;
+}
+
+.map_box ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.map_box ul li img {
+    width: 200px;
+}
+
+.map_box ul li h3 {
+    font-weight: bolder;
+}
+
+.map_box ul li p {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    color: #383838;
+}

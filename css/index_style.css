@@ -1,0 +1,1394 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+figure,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: bold;
+}
+
+body {
+    font-family: 'GowunBatang-Regular', 'SpoqaHanSansNeo-Regular', 'Noto Sans', sans-serif;
+    word-break: keep-all;
+    line-height: 24px;
+
+    position: relative;
+    /* header 기준 */
+
+    /* cursor: url(../images/icon/icon_cursor.png), auto; */
+}
+
+#wrap {
+    min-width: 1600px;
+}
+
+/* scroll top */
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+
+
+    display: none;
+    /* background-color: #081120; */
+
+    width: 40px;
+
+    text-align: center;
+    padding: 5px 5px 0;
+}
+
+.top img {
+    width: 50px;
+    display: block;
+}
+
+/* main_banner */
+#main_banner_wrap {
+    height: 950px;
+
+    background-image: url(../images/main/main_banner/main_banner.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+    /* margin 0 auto를 잡는 상위에게 해야하는 것! */
+
+.main_banner {
+    width: 1320px;
+    height: 950px;
+    margin: 0 auto;
+
+    position: relative;
+    /* popup/main_banner_text 기준 */
+}
+
+.main_banner_text h2 span {
+    color: #ea4e5e;
+    font-weight: bold;
+}
+
+/* 메인팝업 1*/
+.popup {
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 17px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.743);
+}
+
+.hover1 {
+    width: 250px;
+    height: 140px;
+
+    padding-top: 140px;
+    padding-left: 10px;
+
+    position: absolute;
+    top: 20%;
+    left: -100px;
+    z-index: 1;
+
+    text-align: left;
+
+    /* background-color: rgba(255, 192, 203, 0.377); */
+}
+
+.popup1 {
+    width: 380px;
+    height: 300px;
+
+    position: absolute;
+    top: 18%;
+    left: -110px;
+    z-index: 99;
+
+    border: 2px solid #081120;
+}
+
+.popup1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 메인팝업 2*/
+.hover2 {
+    width: 140px;
+    height: 300px;
+
+    text-align: center;
+
+    position: absolute;
+    top: 21%;
+    left: 63.5%;
+
+    /* background-color: #ea4e5e4d; */
+}
+
+.popup2 {
+    text-align: right;
+    width: 310px;
+    height: 310px;
+    line-height: 2em;
+
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    z-index: 99;
+
+    /* background-color: #08112067; */
+}
+
+/* 메인팝업 3*/
+.hover3 {
+    width: 250px;
+    height: 200px;
+
+    position: absolute;
+    top: 30%;
+    right: -120px;
+    padding-top: 200px;
+
+    text-align: right;
+
+    /* background-color: #ea4e5e4d; */
+}
+
+.popup3 {
+    width: 300px;
+    height: 439px;
+
+    position: absolute;
+    top: 30%;
+    right: -130px;
+    z-index: 99;
+
+    border: 2px solid #081120;
+}
+
+.popup3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 메인팝업 4*/
+.hover4 {
+    width: 250px;
+    height: 300px;
+
+    padding-left: 110px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 50%;
+    left: 11%;
+
+    /* background-color: #ea4e5e4d; */
+}
+
+.popup4 {
+    width: 250px;
+    height: 250px;
+
+    text-align: right;
+
+    padding-top: 150px;
+    padding-right: 30px;
+
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    z-index: 99;
+
+    /* background-color: palegreen; */
+}
+
+/* 메인배너 텍스트 / main_banner 기준잡음 */
+.main_banner_text {
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.743);
+}
+
+.main_banner_text h1::before {
+    content: "";
+    width: 1px;
+    height: 70px;
+    background-color: #fff;
+
+    display: block;
+
+    position: absolute;
+    top: -100px;
+    left: 50%;
+}
+
+.main_banner_text h1 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.main_banner_text h2 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/* main_week */
+#main_week {
+    height: 620px;
+    background-color: #081120;
+
+    background-image: url(../images/icon/light_on.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.inner_week {
+    width: 1320px;
+    height: 620px;
+    margin: 0 auto;
+
+    padding-top: 50px;
+    text-align: center;
+}
+
+.inner_week h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+
+    color: #fff;
+}
+
+.inner_week>h1::before {
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: #fff;
+
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+
+.inner_week>h1::after {
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: #fff;
+
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+#main_week #slide_wrap .screen img {
+    border-radius: 10px;
+}
+
+/* main_book */
+#main_book {
+    /* 롤링배너 */
+    height: 800px;
+}
+
+.inner_main_book {
+    width: 1320px;
+    height: 700px;
+    margin: 100px auto;
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #162844;
+}
+
+.book_text {
+    width: 300px;
+    height: 650px;
+
+    box-sizing: border-box;
+
+    padding: 50px 15px 0;
+    /* 띄우기 */
+    word-break: keep-all;
+
+    border: 1px solid #081120;
+    color: #081120;
+
+    /* background-image: url(../images/icon/light_on.png);
+    background-repeat: no-repeat;
+    background-position: center top; */
+}
+
+.book_text>h1 {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #081120;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.book_text>h3 {
+    font-size: 16px;
+    margin: 50px 0 50px;
+    text-align: center;
+}
+
+.book_tag {
+    padding-top: 50px;
+    /* background-color: yellow; */
+}
+
+.book_tag>a {
+    display: inline-block;
+
+    border: 1px solid #090a0a;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin: 2px 0;
+}
+
+.book_tag>a:hover {
+    background-color: #081120;
+    color: #fff;
+}
+
+/* mainbook swiper */
+#main_book #slide_wrap {
+    width: 1020px;
+    height: 650px;
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    /* background-color: yellow; */
+
+    position: relative;
+}
+
+#main_book #slide {
+    width: 920px;
+    height: 650px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    padding-top: 190px;
+    padding-bottom: 20px;
+    /* background-color: rgba(255, 0, 0, 0.514); */
+}
+
+#main_book #slide ul li {
+    cursor: pointer;
+}
+
+#main_book .swiper-book .screen {
+    position: relative;
+    overflow: hidden;
+
+    width: 290px;
+    height: 450px;
+
+    box-shadow: 5px 5px 5px #0000009f;
+}
+
+#main_book .swiper-book .screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transform: scale(1);
+    transition: 0.7s;
+}
+
+/* #main_book .swiper-slide-active+.swiper-slide+.swiper-slide .bottom {
+    bottom: 0%;
+} */
+
+#main_book .swiper-slide-prev {
+    /* 첫번째 */
+    transform: translateY(-170px);
+    opacity: 1;
+}
+
+/* #main_book .swiper-book .swiper-slide,
+.swiper-slide-active {
+    transform: translateY(-80px);
+    transition: transform 1s;
+} */
+
+#main_book .swiper-slide-active.swiper-slide+.swiper-slide {
+    /* 세번째 */
+    transform: translateY(-120px);
+    transition: transform 1s;
+    opacity: 1;
+}
+
+/* #main_book .swiper-slide-active+.swiper-slide+.swiper-slide,
+.swiper-slide-active {
+    transform: translateY(-100px);
+    transition: transform 1s;
+} */
+
+#main_book .swiper-button-prev {
+    content: url(../images/icon/icon_left.png);
+    width: 30px;
+    height: 30px;
+    /* background-color: #ea4e5e; */
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+#main_book .swiper-button-prev:hover {
+    content: url(../images/icon/icon_left_hover.png);
+    width: 30px;
+    height: 30px;
+}
+
+#main_book .swiper-button-next {
+    content: url(../images/icon/icon_right.png);
+    width: 30px;
+    height: 30px;
+    /* background-color: #ea4e5e; */
+
+    position: absolute;
+    top: 50%;
+    left: 980px;
+}
+
+#main_book .swiper-button-next:hover {
+    content: url(../images/icon/icon_right_hover.png);
+    width: 30px;
+    height: 30px;
+}
+
+/* main_book hover */
+.book_cover {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 80px 50px 0;
+    line-height: 2em;
+
+    text-shadow: 5px 5px 5px #0000009f;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.swiper-book .screen:hover .book_cover {
+    opacity: 1;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.book_cover h2 {
+    border-bottom: 1px solid #ea4e5e;
+    padding-bottom: 3px;
+    color: #ea4e5e;
+    margin-bottom: 80px;
+}
+
+/* main_poet */
+.inner_main_poet {
+    width: 1320px;
+    height: 850px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    overflow: hidden;
+
+    /* background-image: url(../images/icon/light_on.png);
+    background-repeat: no-repeat;
+    background-position: top right; */
+}
+
+.poet_text {
+    text-align: right;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    position: relative;
+    /* main04_tag 기준 */
+}
+
+.poet_text>h1 {
+    background-color: #081120;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+
+    display: inline-block;
+    font-size: 30px;
+}
+
+.poet_text>h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.poet_tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.poet_tag>a {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 3px;
+
+    border: 1px solid #081120;
+    color: #081120;
+}
+
+.poet_tag>a:hover {
+    background-color: #081120;
+    color: #fff;
+}
+
+/* poet_box */
+.poet_box {
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.poet_box .tab_menu {
+    width: 950px;
+    height: 50px;
+    margin-bottom: 1px;
+
+    position: relative;
+    cursor: pointer;
+
+    background-color: #081120;
+}
+
+.poet_box .tab_menu ul {
+    /* 가로 정렬 */
+    display: flex;
+}
+
+.poet_box .tab_menu ul li {
+    color: #fff;
+    font-weight: bold;
+
+    width: calc(100% / 4);
+    text-align: center;
+    /* 가로 가운데 */
+    line-height: 50px;
+    /* 세로 가운데 / 위에 탭메뉴에서 높이 50으로 잡았음 */
+
+    z-index: 1;
+    border-left: 1px solid #fff;
+    /* z-index는 무조건 position과 같이 쓰지만
+    직계 부모에게 display:flex가 있으면 포지션없이
+    사용가능! */
+}
+
+.poet_box .tab_menu ul li:first-child {
+    border-left: none;
+    border-right: 1px solid #fff;
+}
+
+.poet_box .tab_menu .bar {
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: #ea4e5e;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* 기준은 .tab_menu */
+}
+
+.poet_box .tab_menu .bar span {
+    position: absolute;
+    left: -999999999px;
+
+    /* ↑프로그램 상 이 메뉴를 읽어주지만, 눈에는 안 보이게 */
+    /* display:none은 프로그램도 못 읽어서 position 쓴거임 */
+}
+
+.poet_box figure {
+    display: none;
+
+    position: relative;
+    /* poet_wrap 기준 */
+}
+
+.poet_box figure.on {
+    /* 클래스명on 붙으면 나타나도록 */
+    display: block;
+}
+
+.poet_box figure img {
+    width: 1320px;
+    height: 500px;
+    object-fit: cover;
+
+    display: block;
+}
+
+.poet_wrap {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    text-shadow: 2px 2px 2px #0000009f;
+}
+
+.poet01 {
+    color: #fff;
+    position: relative;
+}
+
+.poet01_1 {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+
+    text-align: center;
+}
+.poet01_1 p span {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.poet01_2 {
+    position: absolute;
+    top: 205px;
+    left: 90px;
+}
+.poet01_3 {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+.poet01_3 p span {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.poet01_4 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+.poet01_4 p span {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.poet01_5 {
+    color: #081120;
+    font-weight: bold;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.poet01_6 {
+    color: #081120;
+    font-weight: bold;
+    position: absolute;
+    top: 157px;
+    right: 20%;
+}
+.poet01_6 p span {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+
+/* 글자효과 */
+.word {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+
+  .word1 {
+    animation: typing 1s steps(12), blink .5s step-end infinite alternate;
+    width: 8.5ch;
+    margin-bottom: 15px;
+    margin-left: 33px;
+  }
+
+  .word2 {
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    width: 28ch;
+    margin-bottom: 15px;
+  }
+
+  .word3 {
+    animation: typing 1s steps(12), blink .5s step-end infinite alternate;
+    width: 7ch;
+    margin-bottom: 15px;
+  }
+
+  .word4 {
+    animation: typing 1s steps(12), blink .3s step-end infinite alternate;
+    width: 9ch;
+    margin-bottom: 15px;
+    margin-left: 33px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .word_box {
+    animation: fade 2s linear;
+}
+
+  @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+/* 광고배너 text_event */
+.text_event {
+    width: 100%;
+    height: 150px;
+
+    background-color: #081120;
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.text_event>div {
+    width: 1320px;
+    height: 150px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.ad_box {
+    height: 150px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad_left p {
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.ad_left p strong {
+    color: #ea4e5e;
+}
+
+.ad_left p span {
+    font-size: 18px;
+}
+
+.ad_right a {
+    display: block;
+    background-color: #fff;
+    color: #081120;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.ad_right a:hover {
+    background-color: #ea4e5e;
+}
+
+.text_event>div {
+    display: none;
+}
+
+.text_event>div.on {
+    display: block;
+}
+
+/* .ad_img {
+    background: url(../images/main/main_ad/re_design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15%;
+} */
+
+/* main_art */
+/* #main_art {
+    background-image: url(../images/icon/light_on.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+} */
+
+.inner_main_art {
+    width: 1320px;
+    height: 1550px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.art_text {
+    text-align: center;
+    margin-bottom: 40px;
+
+    position: relative;
+    /* p 기준 */
+    overflow: hidden;
+}
+
+.art_text>h1 {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 25px;
+
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #081120;
+    color: #fff;
+}
+
+.art_text>h3 {
+    font-size: 18px;
+    margin: 15px 0 50px;
+}
+
+.art_text>p {
+    /* art_text 기준잡음 */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    font-size: 15px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+
+    border-bottom: 1px solid #081120;
+}
+
+.art_text>p span {
+    background-color: #ea4e5e;
+
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* cursor img */
+.cursor_img {
+    cursor: url(../images/icon/icon_click.png), auto;
+}
+
+/* art 이미지 */
+#main_art .inner_main_art .art_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.target_box {
+    width: 720px;
+    height: 650px;
+
+    position: sticky;
+    /* 최근에 나온 기능 */
+    top: 50px;
+    left: 0;
+    /* 초반에는 position:relative 의 기능을 가짐 */
+    /* 부모가 상위에 걸리는 순간 (여기서는 top 50px) */
+    /* postion:fixed처럼 고정 됨! */
+    /* sticky 사용시 부모에게 overflow 속성이 있으면 적용 안 됨 */
+    /* explore에선 적용 안 됐는데 explore 사용이 적어지면서 점차 사용추세 */
+}
+
+.target_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    box-shadow: 5px 5px 5px #0000009f;
+
+    border-radius: 15px;
+}
+
+.art_list .port_list {
+    width: calc(100% - 720px - 20px);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* 공간 부족하면 떨어져 */
+    /* flex-flow: column; */
+}
+
+.art_list .port_list .port_item {
+    width: 280px;
+}
+
+.art_list .port_list .port_item figure {
+    width: 280px;
+
+    max-height: 400px;
+    height: 27.77vw;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    /* 1440px 이하부터는 브라우저 너비에 대응됨 */
+    /* 400 / 1440 * 100 => 27.77vw */
+    /* vw = 브라우저너비에 반응 */
+    /* vh = 브라우저높이에 반응 */
+}
+
+.art_list .port_list .port_item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+    transition: 0.5s;
+    /* 부드럽게 */
+}
+
+.art_list .port_list .port_item:nth-child(2n) {
+    margin-top: 100px;
+}
+
+/* item에 hover했을 때 img 확대 */
+.port_list .port_item:hover figure img {
+    transform: scale(1.2);
+    /* 1.2배 확대 */
+    transition: 0.5s;
+    /* 부드럽게 */
+    display: block;
+}
+
+.title {
+    display: inline-block;
+}
+
+.port_list h4 {
+    font-size: 18px;
+    border-bottom: 1px solid #081120;
+}
+
+.port_list p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    padding-top: 10px;
+}
+
+/* art_zoom */
+.target_wrap {
+    position: relative;
+    width: 720px;
+}
+
+.magnifier {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 0 3px 3px rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.target {
+    display: block;
+    width: 100%;
+}
+
+.target_box img {
+    display: none;
+}
+
+.target_box img.target {
+    display: block;
+    width: 100%;
+}
+
+/* roll_img1 */
+#roll_img_wrap {
+    height: 1400px;
+    padding: 0 0 100px;
+    background: url(../images/main/main_roll/roll_bg.jpg) 50% 0;
+    background-attachment: fixed;
+
+    /* background-color: #081120; */
+
+    text-align: center;
+    overflow: hidden;
+}
+
+.roll_title {
+    height: 30px;
+    padding-top: 35px;
+    background-image: url(../images/header/gnb/gnb_on.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.roll_title>h1 {
+    font-size: 30px;
+
+    color: #fff;
+}
+
+.roll_title>h1::before {
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: #fff;
+
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+
+.roll_title>h1::after {
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: #fff;
+
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.inner_roll1 {
+    height: 600px;
+    width: 100%;
+    margin: 100px auto 50px;
+
+    position: relative;
+}
+
+.inner_roll2 {
+    height: 600px;
+    width: 100%;
+    margin: 50px auto;
+
+    position: relative;
+}
+
+.roll1 {
+    width: 2980px;
+    /* background-color: red; */
+
+    display: flex;
+    /* justify-content: space-between; */
+
+    position: absolute;
+
+    animation: roll1 20s infinite linear;
+    /* animation-fill-mode: forwards; */
+    /* animation-play-state: paused; */
+}
+
+.roll1>div {
+    width: auto;
+    height: 500px;
+    margin: 0 30px;
+
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.roll1 div img {
+    width: auto;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.roll1_1 {
+    width: 2980px;
+
+    display: flex;
+    /* justify-content: space-between; */
+
+    position: absolute;
+
+    animation: roll1_1 20s infinite linear;
+    /* animation-fill-mode: forwards; */
+}
+
+.roll1_1>div {
+    width: auto;
+    height: 500px;
+    margin: 0 30px;
+
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.roll1_1 div img {
+    width: auto;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.roll2 {
+    width: 3020px;
+
+    display: flex;
+    /* justify-content: space-between; */
+
+    position: absolute;
+
+    animation: roll2 20s infinite linear;
+}
+
+.roll2>div {
+    width: auto;
+    height: 500px;
+    margin: 0 30px;
+
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.roll2 div img {
+    width: auto;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.roll2_1 {
+    width: 3020px;
+
+    display: flex;
+    /* justify-content: space-between; */
+
+    position: absolute;
+
+    animation: roll2_1 20s infinite linear;
+}
+
+.roll2_1>div {
+    width: auto;
+    height: 500px;
+    margin: 0 30px;
+
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.roll2_1>div img {
+    width: auto;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+.roll_text {
+    /* 공통꾸미기 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000009f;
+
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+    text-shadow: 5px 5px 5px #0000009f;
+    text-align: center;
+
+    opacity: 0;
+    padding-top: 200px;
+
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.roll_text h2 {
+    margin-bottom: 50px;
+}
+
+/* img:hover */
+.roll1>div:hover .roll_text {
+    opacity: 1;
+}
+
+.roll1_1>div:hover .roll_text {
+    opacity: 1;
+}
+
+.roll1>div:hover img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.roll1_1>div:hover img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.roll2>div:hover .roll_text {
+    opacity: 1;
+}
+
+.roll2_1>div:hover .roll_text {
+    opacity: 1;
+}
+
+.roll2>div:hover img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.roll2_1>div:hover img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+/* animation */
+@keyframes roll1 {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 2980px;
+    }
+}
+
+@keyframes roll1_1 {
+    0% {
+        left: -2980px;
+    }
+
+    100% {
+        left: -10px;
+    }
+}
+
+@keyframes roll2 {
+    0% {
+        right: 0px;
+    }
+
+    100% {
+        right: 3020px;
+    }
+}
+
+@keyframes roll2_1 {
+    0% {
+        right: -3020px;
+    }
+
+    100% {
+        right: -10px;
+    }
+}
